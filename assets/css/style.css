@@ -103,11 +103,21 @@ main {
 	font-size: 22px;
 	line-height: 1.4;
 }
-/* .services-content {
+.services-content {
 	display: flex;
 	flex-wrap: wrap;
 }
 .services-content div {
-	width: 33%;
+	width: 50%;
 	text-align: center;
-} */
+	margin-bottom: 50px;
+}
+h3 {
+	font-size: 24px;
+}
+.services p {
+	text-align: center;
+	margin: 10px 10px 15px 10px;
+	font-size: 20px;
+	line-height: 1.4;
+}
