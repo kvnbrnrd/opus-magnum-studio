@@ -70,7 +70,7 @@ main {
 	background-size: cover;
 }
 .section-title {
-	font-size: 32px;
+	font-size: 26px;
 	line-height: 48px;
 	width: 100%;
 	overflow: hidden;
@@ -82,7 +82,7 @@ main {
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
-	width: 400px;
+	width: 390px;
 	height: 3px;
 	border-top: 3px solid #E5E2D3;
   }
@@ -103,7 +103,7 @@ main {
 	font-size: 22px;
 	line-height: 1.4;
 }
-.services-content {
+.services-content, .works-content {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -113,11 +113,19 @@ main {
 	margin-bottom: 50px;
 }
 h3 {
-	font-size: 24px;
+	font-size: 22px;
 }
 .services p {
 	text-align: center;
 	margin: 10px 10px 15px 10px;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.4;
+}
+.works-content {
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.works-content img {
+	width: 30%;
+	margin: 5px;
 }
