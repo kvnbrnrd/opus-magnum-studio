@@ -51,7 +51,8 @@ table {
 html, body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+	overflow-x: hidden;
+	color: white;
 }
 .banner {
 	display: block;
@@ -60,11 +61,53 @@ html, body {
 	width: 100%;
 	height: 100%;
 }
-.parallax {
+main {
     background-image: url(../../img/website-bg.webp);
     min-height: 100%; 
     background-attachment: fixed;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
 }
+.section-title {
+	font-size: 32px;
+	line-height: 48px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+  .section-title:before, .section-title:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 400px;
+	height: 3px;
+	border-top: 3px solid #E5E2D3;
+  }
+  .section-title:before {
+	margin-right: 10px;
+  }
+  .section-title:after {
+	margin-left: 10px;
+  }
+  section {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+  .about p {
+	text-align: center;
+	margin: 20px 20px 30px 20px;
+	font-size: 22px;
+	line-height: 1.4;
+}
+/* .services-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+.services-content div {
+	width: 33%;
+	text-align: center;
+} */
