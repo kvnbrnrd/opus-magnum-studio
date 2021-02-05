@@ -115,7 +115,7 @@ main {
 h3 {
 	font-size: 22px;
 }
-.services p {
+.services p, .engineer-content p {
 	text-align: center;
 	margin: 10px 10px 15px 10px;
 	font-size: 18px;
@@ -128,4 +128,7 @@ h3 {
 .works-content img {
 	width: 30%;
 	margin: 5px;
+}
+.engineer-content {
+	display: flex;
 }
