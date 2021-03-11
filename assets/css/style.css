@@ -46,6 +46,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* ****************** Fonts ****************** */
+@font-face {
+	font-family: Codec;
+	src: url(../fonts/CodecPro-Regular.ttf);
+}
+@font-face {
+	font-family: Gotham;
+	src: url(../fonts/GothamLight\ Regular.otf);
+}
+@font-face {
+	font-family: Mont;
+	src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+	font-family: Omega;
+	src: url(../fonts/Omega+Sans+Regular.ttf);
+}
 
 /* ****************** Style général ****************** */
 html, body {
@@ -53,7 +70,10 @@ html, body {
     height: 100%;
 	overflow-x: hidden;
 	color: white;
-	font-family: sans-serif;
+	font-family: Omega;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Codec;
 }
 a {
 	text-transform: none;
@@ -68,7 +88,7 @@ a {
 	height: 100%;
 }
 body {
-    background-image: url(../../img/website-bg.webp);
+    background-image: url(../../img/website-bg.jpg);
     min-height: 100%; 
     background-attachment: fixed;
     background-position: 50% 50%;
