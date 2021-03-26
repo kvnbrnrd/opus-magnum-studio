@@ -7,16 +7,17 @@ function fadeOverlay() {
       ], ease: "power3.inOut"});
 }
 var wrapper = document.querySelector(".svg-wrapper");
+
 TweenLite.defaultEase = Sine.easeInOut;
 TweenLite.set("g", {x:10, y:30});
 
 var svg   = document.querySelector("svg");
 var wave  = document.querySelector("#wave");
-var width = 350;
+var width = 250;
 
 var amplitude = 30;
-var frequency = 15;
-var segments  = 200;
+var frequency = 10;
+var segments  = 150;
 var interval  = width / segments;
 
 for (var i = 0; i < segments; i++) {
