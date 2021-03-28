@@ -259,6 +259,7 @@ section:nth-child(even) {
 .services-content div {
 	width: 33%;
 	text-align: center;
+	padding-bottom: 25px;
 }
 h2 {
 	letter-spacing: 1.2px;
@@ -306,7 +307,7 @@ h3 {
 	font-size: 18px;
 	line-height: 1.4;
 }
-.engineer {
+.contact {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
