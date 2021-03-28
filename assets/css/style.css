@@ -145,7 +145,6 @@ header h3, header a {
 						 "footer"
 						 "svg"
 						 "credits";
-
 }
 nav {
 	grid-area: nav;
@@ -164,7 +163,8 @@ nav p {
 nav img {
 	width: 200px;
 	height: 200px;
-	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .svg-wrapper {
 	grid-area: svg;
@@ -178,20 +178,18 @@ nav img {
 svg {
 	width: 250px;
 	height: 50px;
-  }
-
+}
   line {
 	stroke-width: 1;
 	stroke: #3c3c3c;
-  }
-  
+}
   #wave {
 	fill: none;
 	stroke-width: 1;
 	stroke-linecap: round;
 	stroke-linejoin: round;
-	stroke: #56acf4;
-  }
+	stroke: #eeeeee;
+}
 .footer-content {
 	grid-area: footer;
 	display: flex;
@@ -200,19 +198,16 @@ svg {
 	align-items: center;
 	color: #EEEEEE;
 }
-.footer-content__email, .footer-content__social, .footer-content__credits {
+.footer-content__email, .footer-content__address, .footer-content__social, .footer-content__credits {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
 }
-
 main {
 	grid-area: main;
-	max-width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-right: 100px;
 	/* display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -282,8 +277,8 @@ h3 {
 	justify-content: center;
 }
 .works-content img {
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 350px;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
@@ -448,88 +443,89 @@ textarea:hover {
 
 @keyframes prop {
 	0% {
-	background: red;
+	background: white;
 	left: -2%;
 	}
 	5% {
-		background: #9337fe;
+		/* background: #9337fe; */
 	}
 	10% {
 	height: 10%;
 	margin-top: -5%;
-	background: #c532fc;
+	/* background: #c532fc; */
 	}
-	15% {
+	/* 15% {
 	background: #f689f8;
-	}
+	} */
 	20% {
 	height: 34%;
 	margin-top: -17%;
-	background: #3af9da;
+	/* background: #3af9da; */
 	}
-	25% {
+	/* 25% {
 	background: #ff2f8d;
-	}
+	} */
 	30% {
 	height: 10%;
 	margin-top: -5%;
-	background: #54e678;
+	/* background: #54e678; */
 	}
-	35% {
+	/* 35% {
 	background: #dc5245;
-	}
+	} */
 	40% {
 	height: 34%;
 	margin-top: -17%;
-	background: #3af9da;
+	/* background: #3af9da; */
 	}
-	45% {
+	/* 45% {
 	background: #f8b435;
-	}
+	} */
 	50% {
 	height: 10%;
 	margin-top: -5%;
-	background: #54e678;
+	/* background: #54e678; */
 	}
-	55% {
+	/* 55% {
 	background: #e0ff3b;
-	}
+	} */
 	60% {
 	height: 34%;
 	margin-top: -17%;
-	background: #3af9da;
+	/* background: #3af9da; */
 	}
-	65% {
+	/* 65% {
 	background: #46f443;
-	}
+	} */
 	70% {
 	height: 10%;
 	margin-top: -5%;
-	background: #54e678;
+	/* background: #54e678; */
 	}
-	75% {
+	/* 75% {
 	background: #4df3a9;
-	}
+	} */
 	80% {
 	height: 34%;
 	margin-top: -17%;
-	background: #3af9da;
+	/* background: #3af9da; */
 	}
-	85% {
+	/* 85% {
 	background: #36ebf4;
-	}
+	} */
 	90% {
 	height: 10%;
 	margin-top: -5%;
-	background: #3db3f3;
+	/* background: #3db3f3; */
 	}
-	95% {
+	/* 95% {
 	background: #3c82f1;
-	}
+	} */
 	100% {
 	left: 100%;
 	height: 34%;
 	margin-top: -17%;
-	background: #5b38ee;
+	/* background: #5b38ee; */
+	background: #eeeeee;
 	}
 }
