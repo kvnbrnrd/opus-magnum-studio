@@ -1,13 +1,15 @@
+// Fondu de la bannière
 document.querySelector(".fader").addEventListener("click", fadeOverlay);
 
 function fadeOverlay() {
     gsap.to(".overlay", {keyframes: [
         {opacity: 0, duration: 1},
-        {visibility: "hidden", delay: 1}, //create a 0.5 second gap
+        {visibility: "hidden", delay: 1}, 
       ], ease: "power3.inOut"});
 }
-var wrapper = document.querySelector(".svg-wrapper");
 
+// Animation de la sinusoïde
+var wrapper = document.querySelector(".svg-wrapper");
 TweenLite.defaultEase = Sine.easeInOut;
 TweenLite.set("g", {x:10, y:30});
 
