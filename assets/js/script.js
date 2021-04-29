@@ -8,6 +8,15 @@ function fadeOverlay() {
       ], ease: "power3.inOut"});
 }
 
+var mq = window.matchMedia( "(max-width: 1080px)" );
+if (mq.matches) {
+  document.getElementById("overlay-bg").src="img/OMS-mobile-ban.jpg";
+}
+else {
+  document.getElementById("overlay-bg").src="img/OMS-ban.jpg";
+}
+
+
 // Animation de la sinusoïde
 var wrapper = document.querySelector(".svg-wrapper");
 TweenLite.defaultEase = Sine.easeInOut;
