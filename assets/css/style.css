@@ -244,8 +244,8 @@ section:nth-child(even) {
   }
   .about p {
 	text-align: center;
-	margin: 20px 20px 30px 20px;
-	font-size: 22px;
+	margin: 15px 15px 20px 15px;
+	font-size: 20px;
 	line-height: 1.4;
 }
 .services-content, .works-content {
