@@ -270,21 +270,33 @@ h3 {
 	font-size: 18px;
 	line-height: 1.4;
 }
+.studio-works p, .personal-works p {
+	text-align: center;
+	margin-bottom: 20px;
+}
 .works-content {
 	justify-content: center;
 }
 .studio-work {
 	width: 24vw;
-	height: 24vw;
+	height: 26vw;
 	display: flex;
     flex-direction: column;
     align-items: center;
 }
+.personal-works .studio-work {
+	height: 23vw;
+}
 .studio-work p {
 	margin: 5px;
+	font-size: 14px;
+}
+#warhammer {
+	font-size: 13px;
 }
 .studio-work > p:first-of-type {
 	font-weight: bold;
+	font-size: 16px;
 }
 .studio-work img {
 	width: 17.5vw;
