@@ -298,7 +298,7 @@ h3 {
 	font-weight: bold;
 	font-size: 16px;
 }
-.studio-work img {
+.studio-work iframe, .studio-work img {
 	width: 17.5vw;
 	height: 17.5vw;
 	-webkit-filter: grayscale(100%);
@@ -308,7 +308,7 @@ h3 {
 	filter: gray; 
 	text-align: center;
 }
-.works-content img:hover {
+.studio-work iframe:hover, .studio-work img:hover  {
 	-webkit-filter: none;
 	-moz-filter: none;
 	-ms-filter: none;
