@@ -139,7 +139,7 @@ header h3, header a {
 	height: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1.5fr 100px 1fr 100px 100px;
+	grid-template-rows: 1fr 50px 1fr 75px 75px;
 	grid-template-areas: "nav"
 						 "waves"
 						 "footer"
@@ -205,6 +205,9 @@ svg {
 	text-align: center;
 	justify-content: center;
 }
+.footer-content__credits p {
+	margin-bottom: 5px;
+}
 main {
 	grid-area: main;
 	margin-right: 100px;
@@ -232,7 +235,7 @@ section:nth-child(even) {
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
-	width: 20vw;
+	width: 10vw;
 	height: 3px;
 	border-top: 1px solid rgba(0,0,0,0.7);
   }
@@ -244,7 +247,7 @@ section:nth-child(even) {
   }
   #about p {
 	text-align: center;
-	margin: 15px 15px 20px 15px;
+	margin: 0 15px 20px 15px;
 	font-size: 20px;
 	line-height: 1.4;
 }
@@ -278,8 +281,8 @@ h3 {
 	justify-content: center;
 }
 .studio-work {
-	width: 24vw;
-	height: 26vw;
+	width: 33%;
+	height: auto;
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,10 +406,63 @@ textarea:hover {
 	body {
 		background-size: contain;
 	}
+	#about p {
+		margin: 0 0px 15px 15px;
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	#services p {
+		margin: 10px 5px 5px 5px;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+	.section-title {
+		font-size: 22px;
+		line-height: 36px;
+	}
+	h3 {
+		font-size: 20px;
+	}
 }
-@media only screen and (max-width: 1200px) {
-	/* body {
-		background-image: url(../../img/OMS-mobile-ban.jpg);
-	} */
+@media only screen and (max-width: 1280px) {
+	main {
+		margin-right: 60px;
+	}
+	nav img {
+		width: 150px;
+		height: 150px;
+	}
+	.services-content div {
+		width: 50%;
+	}
+	.engineer-content {
+		flex-direction: column;
+	}
+	.engineer-content__pic, .engineer-content__desc {
+		width: auto;
+	}
+	.engineer-content__pic img {
+		max-width: 60%;
+		max-height: 60%;
+	}
+	.engineer-content__desc p {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#about p {
+		font-size: 16px;
+	}
+	#services p {
+		font-size: 15px;
+	}
+	.engineer-content__pic img {
+		max-width: 50%;
+		max-height: 50%;
+	}
+	.engineer-content__desc p {
+		font-size: 15px;
+	}
 }
 
