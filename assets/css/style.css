@@ -71,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Futura;
 	color: black;
 }
+.mobile {
+	display: none;
+}
 a {
 	text-transform: none;
 	color: #303030;
@@ -139,14 +142,16 @@ header h3, header a {
 	height: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 50px 1fr 75px 75px;
-	grid-template-areas: "nav"
+	grid-template-rows: 1fr 1fr 50px 1fr 75px 75px;
+	grid-template-areas: "logo"
+						 "nav"
 						 "waves"
 						 "footer"
 						 "svg"
 						 "credits";
+	justify-content: center;
 }
-nav {
+.header-wrapper nav {
 	grid-area: nav;
 	text-align: center;
 	display: flex;
@@ -154,13 +159,17 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
-nav p {
+.header-wrapper nav p {
 	font-size: 14px;
 	font-family: Omega;
 	color: #EEEEEE;
-	margin: 5px;
+	margin: 10px;
 }
-nav img {
+.logo {
+	grid-area: logo;
+	text-align: center;
+}
+.logo img {
 	width: 200px;
 	height: 200px;
 	padding-top: 10px;
@@ -428,7 +437,7 @@ textarea:hover {
 	main {
 		margin-right: 60px;
 	}
-	nav img {
+	.logo img {
 		width: 150px;
 		height: 150px;
 	}
@@ -470,7 +479,7 @@ textarea:hover {
 	header {
 		font-size: 14px;
 	}
-	nav img {
+	.logo img {
 		width: 100px;
 		height: 100px;
 	}
@@ -484,58 +493,80 @@ textarea:hover {
 @media only screen and (max-width: 768px) {
 	body {
 		grid-template-columns: 1fr;
-		grid-template-rows: 50px 1fr;
-		grid-template-areas: "header" "main";
+		grid-template-rows: 90px 1fr;
+		grid-template-areas: "mobile"
+							 "main";
+	}
+	header {
+		grid-area: unset;
 	}
 	main {
-		margin-top: 50px;
-		margin-right: 20px;
+		margin-right: 30px;
 	}
-	.css-animation-wrapper, .footer-content, .svg-wrapper, .footer-content__credits {
+	.desktop {
 		display: none;
 	}
-	nav {
+	.mobile-header {
+		grid-area: mobile;
+		position: fixed;
+		height: 90px;
+		width: 100%;
 		background: #111;
 		display: grid;
-		grid-template-rows: 1fr 1fr;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-areas: "logo logo logo logo logo logo"
-							 "about services studio personal engineer contact";
-		height: 105px;
+		grid-template-rows: 2fr 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas: "top"
+							 "menu";
 	}
-	.header-wrapper {
-		position: fixed;
-		height: 50px;
-		width: 100%;
+	.header-top {
+		grid-area: top;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
 	}
-	nav img {
-		grid-area: logo;
+	.header-top > div {
+		width: 33%;
+		text-align: center;
+	}
+	.header-links img, .header-address span img {
+		height: 16px;
+		width: 16px;
+	}
+	.header-address {
+		width: 65%;
+	}
+	.header-links {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.header-links div {
+		padding : 4px;
+	}
+	.header-logo {
+		text-align: center;
+	}
+	.header-logo img {
 		width: 50px;
 		height: 50px;
-		justify-self: center;
 	}
-	nav .anchor:nth-child(2) {
-		grid-area: about;
+	.mobile-header nav {
+		grid-area: menu;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: center;
 	}
-	nav .anchor:nth-child(3) {
-		grid-area: services;
+	.mobile-header nav p {
+		font-size: 10px;
 	}
-	nav .anchor:nth-child(4) {
-		grid-area: studio;
-	}
-	nav .anchor:nth-child(5) {
-		grid-area: personal;
-	}
-	nav .anchor:nth-child(6) {
-		grid-area: engineer;
-	}
-	nav .anchor:nth-child(7) {
-		grid-area: contact;
-	}
-	nav p {
+	.header-credits, .header-links span {
 		font-size: 12px;
 	}
-	.studio-work {
-		z-index: -1;
+	.header-credits p {
+		padding-bottom: 5px;
+		padding-right: 3px;
 	}
 }
