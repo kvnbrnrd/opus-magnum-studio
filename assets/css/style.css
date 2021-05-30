@@ -464,5 +464,78 @@ textarea:hover {
 	.engineer-content__desc p {
 		font-size: 15px;
 	}
+	body {
+		grid-template-columns: 200px 1fr;
+	}
+	header {
+		font-size: 14px;
+	}
+	nav img {
+		width: 100px;
+		height: 100px;
+	}
+	section {
+		margin: 5px;
+	}
+	.header-wrapper {
+		width: 200px;
+	}
 }
-
+@media only screen and (max-width: 768px) {
+	body {
+		grid-template-columns: 1fr;
+		grid-template-rows: 50px 1fr;
+		grid-template-areas: "header" "main";
+	}
+	main {
+		margin-top: 50px;
+		margin-right: 20px;
+	}
+	.css-animation-wrapper, .footer-content, .svg-wrapper, .footer-content__credits {
+		display: none;
+	}
+	nav {
+		background: #111;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "logo logo logo logo logo logo"
+							 "about services studio personal engineer contact";
+		height: 105px;
+	}
+	.header-wrapper {
+		position: fixed;
+		height: 50px;
+		width: 100%;
+	}
+	nav img {
+		grid-area: logo;
+		width: 50px;
+		height: 50px;
+		justify-self: center;
+	}
+	nav .anchor:nth-child(2) {
+		grid-area: about;
+	}
+	nav .anchor:nth-child(3) {
+		grid-area: services;
+	}
+	nav .anchor:nth-child(4) {
+		grid-area: studio;
+	}
+	nav .anchor:nth-child(5) {
+		grid-area: personal;
+	}
+	nav .anchor:nth-child(6) {
+		grid-area: engineer;
+	}
+	nav .anchor:nth-child(7) {
+		grid-area: contact;
+	}
+	nav p {
+		font-size: 12px;
+	}
+	.studio-work {
+		z-index: -1;
+	}
+}
