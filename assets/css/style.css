@@ -135,7 +135,9 @@ header {
 }
 header h3, header a {
 	color: #eeeeee;
-	margin-bottom: 10px;
+}
+header h3 {
+	margin: 10px;
 }
 .header-wrapper {
 	position: fixed;
@@ -170,8 +172,8 @@ header h3, header a {
 	text-align: center;
 }
 .logo img {
-	width: 200px;
-	height: 200px;
+	width: 220px;
+	height: 220px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -295,6 +297,7 @@ h3 {
 	display: flex;
     flex-direction: column;
     align-items: center;
+	z-index: -1;
 }
 .personal-works .studio-work {
 	height: 23vw;
@@ -480,8 +483,8 @@ textarea:hover {
 		font-size: 14px;
 	}
 	.logo img {
-		width: 100px;
-		height: 100px;
+		width: 150px;
+		height: 150px;
 	}
 	section {
 		margin: 5px;
@@ -490,7 +493,7 @@ textarea:hover {
 		width: 200px;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px), (max-height: 750px) {
 	body {
 		grid-template-columns: 1fr;
 		grid-template-rows: 90px 1fr;
