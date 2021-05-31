@@ -227,12 +227,6 @@ main {
 section {
 	margin: 15px;
 }
-/* section:nth-child(odd) {
-	grid-area: section-right;
-}
-section:nth-child(even) {
-	grid-area: section-left;
-} */
 .section-title {
 	font-size: 25px;
 	line-height: 48px;
@@ -290,6 +284,9 @@ h3 {
 }
 .works-content {
 	justify-content: center;
+}
+.small-player {
+	display: none;
 }
 .studio-work {
 	width: 33%;
@@ -595,10 +592,27 @@ textarea {
 form > input, textarea {
 	width: 85%;
 }
-.studio-work {
+.studio-work iframe, .studio-work img {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	filter: none;
+}
+.studio-work, .studio-work iframe {
 	width: 100%;
 }
 .contact-content {
 	padding-bottom: 0;
+}
+.large-player {
+	display: none;
+}
+.small-player {
+	display: block;
+	order: 1;
+}
+.yt-player {
+	margin-bottom: 10px;
+	order: 1;
 }
 }
