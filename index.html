@@ -382,12 +382,12 @@
     <section id="contact">
         <h2 class="section-title">CONTACT</h2>
         <div class="contact-content">
-            <form id="form">
-                <input id="name" type="text" placeholder="NAME">
-                <input id="email" type="text" placeholder="E-MAIL">
-                <input id="subject" type="text" placeholder="SUBJECT">
-                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                <input id="submit" type="submit" value="SEND MESSAGE">
+            <form action="./email.php" method="post" id="form">
+                <input name="name" id="name" type="text" placeholder="NAME">
+                <input name="email" id="email" type="text" placeholder="E-MAIL">
+                <input name="subject" id="subject" type="text" placeholder="SUBJECT">
+                <textarea name="message" id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input name="submit" type="submit" id="submit" value="SEND MESSAGE">
             </form>
             <p>Serious inquiries only. Anything else will be disregarded.</p>
         </div>
