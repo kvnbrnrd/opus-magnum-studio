@@ -493,7 +493,7 @@ textarea:hover {
 		width: 200px;
 	}
 }
-@media only screen and (max-width: 800px), (max-height: 750px) {
+@media only screen and (max-width: 900px), (max-height: 750px) {
 	body {
 		grid-template-columns: 1fr;
 		grid-template-rows: 90px 1fr;
@@ -509,6 +509,7 @@ textarea:hover {
 	.desktop {
 		display: none;
 	}
+	/* **********************  Bandeau ********************** */
 	.mobile-header {
 		grid-area: mobile;
 		position: fixed;
@@ -572,4 +573,32 @@ textarea:hover {
 		padding-bottom: 5px;
 		padding-right: 3px;
 	}
+}
+@media only screen and (max-width: 600px), (max-height: 750px) {
+/* ********************** Général ********************** */
+.services-content div {
+	width: 100%;
+}
+.section-title {
+	font-size: 20px;
+	line-height: 24px;
+}
+.section-title::before, .section-title::after {
+	width: 10vw;
+}
+h3 {
+	font-size: 17px;
+}
+textarea {
+	height: 150px;
+}
+form > input, textarea {
+	width: 85%;
+}
+.studio-work {
+	width: 100%;
+}
+.contact-content {
+	padding-bottom: 0;
+}
 }
