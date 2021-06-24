@@ -8,9 +8,12 @@ function fadeOverlay() {
       ], ease: "power3.inOut"});
 }
 
-var mq = window.matchMedia( "(max-width: 1080px)" );
+var mq = window.matchMedia( "screen and (max-width: 1080px) and (orientation: portrait)" );
+var mql = window.matchMedia( "screen and (max-width: 1080px) and (orientation: landscape)" );
 if (mq.matches) {
   document.getElementById("overlay-bg").src="img/OMS-mobile-ban.jpg";
+} else if (mql.matches) {
+  document.getElementById("overlay-bg").src="img/OMS-mobile-landscape.jpg";
 }
 else {
   document.getElementById("overlay-bg").src="img/OMS-ban.jpg";
