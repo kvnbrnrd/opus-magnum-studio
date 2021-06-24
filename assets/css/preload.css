@@ -1,0 +1,106 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* ****************** Reset CSS ****************** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ****************** Fonts ****************** */
+@font-face {
+	font-family: Codec;
+	src: url(../fonts/CodecPro-Regular.ttf);
+}
+@font-face {
+	font-family: Omega;
+	src: url(../fonts/Omega+Sans+Regular.ttf);
+}
+@font-face {
+	font-family: Futura;
+	src: url(../fonts/Futura-Heavy.ttf);
+}
+/* ****************** Style général ****************** */
+html, body {
+    width: 100%;
+    height: 100%;
+	overflow-x: hidden;
+	color: #303030;
+	font-family: Omega;
+	scroll-behavior: smooth;
+}
+/* ****************** Bannière ****************** */
+.overlay {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	top: 0%;
+	overflow: hidden;
+}
+.overlay img {
+	object-fit: cover;
+	object-position: 50% 50%;
+	width: 100%;
+	height: 100%;
+}
+.overlay button {
+	position: absolute;
+	top: 81%;
+	left: 53%;
+	transform: translate(-81%, -53%);
+	border-radius: 100%;
+	width: 175px;
+	height: 175px;
+	cursor: pointer;
+	text-align: center;
+	background: transparent;
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	border: 1px solid rgba(0,0,0,0.7);
+	font-size: 20px;
+	font-family: Omega;
+	letter-spacing: 10px;
+	color: black;
+}
